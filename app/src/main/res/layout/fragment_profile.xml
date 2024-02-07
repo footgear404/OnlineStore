@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.profile.ProfileFragment">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/main_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dim_16"
+        android:layout_marginTop="@dimen/dim_16"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_bar">
+
+
+        <ge.semenchuk.store.app.stroreapp.presentation.custom.StoreCardView
+            android:id="@+id/user_nail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_grey"
+            app:cardCornerRadius="@dimen/dim_8"
+            app:cardElevation="@dimen/dim_0"
+            app:description="description"
+            app:iconEnd="@drawable/logout_icon"
+            app:iconStart="@drawable/type_account__state_default"
+            app:title="User Name" />
+
+        <ge.semenchuk.store.app.stroreapp.presentation.custom.StoreCardView
+            android:id="@+id/favorite_nail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_16"
+            android:backgroundTint="@color/light_grey"
+            app:cardCornerRadius="@dimen/dim_8"
+            app:cardElevation="@dimen/dim_0"
+            app:iconEnd="@drawable/arrow_right_icon"
+            app:iconStart="@drawable/favorite_unfiled_icon"
+            app:title="@string/favorite"
+            tools:description="1 product" />
+
+        <ge.semenchuk.store.app.stroreapp.presentation.custom.StoreCardView
+            android:id="@+id/shop_nail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:backgroundTint="@color/light_grey"
+            app:cardCornerRadius="@dimen/dim_8"
+            app:cardElevation="@dimen/dim_0"
+            app:iconEnd="@drawable/arrow_right_icon"
+            app:iconStart="@drawable/shop_icon"
+            app:title="@string/shops" />
+
+        <ge.semenchuk.store.app.stroreapp.presentation.custom.StoreCardView
+            android:id="@+id/feedback_nail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:backgroundTint="@color/light_grey"
+            app:cardCornerRadius="@dimen/dim_8"
+            app:cardElevation="@dimen/dim_0"
+            app:iconEnd="@drawable/arrow_right_icon"
+            app:iconStart="@drawable/support_icon"
+            app:title="@string/feedback" />
+
+        <ge.semenchuk.store.app.stroreapp.presentation.custom.StoreCardView
+            android:id="@+id/policy_nail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:backgroundTint="@color/light_grey"
+            app:cardCornerRadius="@dimen/dim_8"
+            app:cardElevation="@dimen/dim_0"
+            app:iconEnd="@drawable/arrow_right_icon"
+            app:iconStart="@drawable/doc_icon_"
+            app:title="@string/policy" />
+
+        <ge.semenchuk.store.app.stroreapp.presentation.custom.StoreCardView
+            android:id="@+id/send_back_nail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:backgroundTint="@color/light_grey"
+            app:cardCornerRadius="@dimen/dim_8"
+            app:cardElevation="@dimen/dim_0"
+            app:iconEnd="@drawable/arrow_right_icon"
+            app:iconStart="@drawable/back_arrow_icon"
+            app:title="@string/send_back" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout"
+        style="@style/Theme.OnlineStore.Button.Logout"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginHorizontal="@dimen/dim_16"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="@dimen/dim_24"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

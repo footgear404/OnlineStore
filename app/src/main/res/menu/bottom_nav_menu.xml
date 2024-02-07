@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/type_home__state_default"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/catalogFragment"
+        android:icon="@drawable/type_catalog__state_default"
+        android:title="@string/catalog" />
+
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/type_bag__state_default"
+        android:title="@string/cart" />
+
+    <item
+        android:id="@+id/discount"
+        android:icon="@drawable/type_discount__state_default"
+        android:title="@string/discount" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/type_account__state_default"
+        android:title="@string/profile_bottom_btn" />
+
+</menu>

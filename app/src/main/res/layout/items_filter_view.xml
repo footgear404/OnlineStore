@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dim_16"
+    tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:contentDescription="@string/sort_icon"
+        android:src="@drawable/sort_icon" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        style="@style/Theme.OnlineStore.Text.caption"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|center_vertical"
+        android:background="@null"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/spinner_items" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Theme.OnlineStore.Text.Title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:letterSpacing="0"
+        android:stateListAnimator="@null"
+        android:text="@string/filters_btn_text"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:icon="@drawable/filter_icon"
+        app:iconSize="@dimen/dim_32"
+        app:iconTint="@color/black"
+        app:rippleColor="@color/light_grey" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/dim_16"
+    tools:background="@color/light_grey">
+
+    <ImageView
+        android:id="@+id/icon_start"
+        android:layout_width="@dimen/dim_24"
+        android:layout_height="@dimen/dim_24"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/user_icon"
+        tools:src="@drawable/type_account__state_default" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Theme.OnlineStore.Text.Title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:text="Title" />
+
+        <TextView
+            android:paddingTop="4dp"
+            android:id="@+id/description"
+            style="@style/Theme.OnlineStore.Text.caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey"
+            tools:text="description" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/icon_end"
+        android:layout_width="@dimen/dim_24"
+        android:layout_height="@dimen/dim_24"
+        android:background="@null"
+        android:contentDescription="@string/user_icon"
+        tools:src="@drawable/arrow_right_icon" />
+
+</LinearLayout>

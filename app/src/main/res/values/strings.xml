@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Online Store</string>
+    <string name="title_home">Главная</string>
+    <string name="catalog">Каталог</string>
+    <string name="profile">Личный кабинет</string>
+    <string name="login">Войти</string>
+    <string name="cart">Корзина</string>
+    <string name="discount">Акции</string>
+    <string name="share">Поделиться</string>
+    <string name="favorite">Избранное</string>
+    <string name="share_action">Действие "поделиться"</string>
+    <string name="input_name">Name</string>
+    <string name="last_name">Фамилия</string>
+    <string name="first_name">Имя</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="enter_a_cyrillic_only_symbols">Допустимы только кириллические символы</string>
+    <string name="policy_text">Нажимая кнопку “Войти”, Вы принимаете \n<u>условия программы лояльности</u></string>
+    <string name="logout">Выйти</string>
+    <string name="user_icon">Иконка пользователя</string>
+    <string name="shops">Магазины</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="send_back">Возврат товара</string>
+    <string name="policy">Оферта</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="add_to_favorite">Add to favorite</string>
+    <string name="filters_btn_text">Фильтры</string>
+    <string name="sort_icon">Sort icon</string>
+    <string name="wellcome_text">Добро пожаловать</string>
+    <string name="profile_bottom_btn">Профиль</string>
+
+    <string-array name="spinner_items">
+        <item>По популярности</item>
+        <item>По уменьшению цены</item>
+        <item>По возрастанию цены</item>
+    </string-array>
+</resources>

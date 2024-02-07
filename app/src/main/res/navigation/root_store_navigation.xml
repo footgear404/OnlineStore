@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_auth">
+
+    <fragment
+        android:id="@+id/navigation_auth"
+        android:name="ge.semenchuk.store.app.stroreapp.presentation.ui.auth.AuthFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_auth">
+
+        <action
+            android:id="@+id/action_navigation_auth_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsItemFragment"
+        android:name="ge.semenchuk.store.app.stroreapp.presentation.ui.details.DetailsItemFragment"
+        android:label="DetailsItemFragment"
+        tools:layout="@layout/fragment_item_details">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="ge.semenchuk.store.app.stroreapp.presentation.ui.catalog.CatalogFragment"
+        android:label="@string/catalog"
+        tools:layout="@layout/fragment_catalog">
+        <action
+            android:id="@+id/action_catalogFragment_to_detailsItemFragment"
+            app:destination="@id/detailsItemFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ge.semenchuk.store.app.stroreapp.presentation.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ge.semenchuk.store.app.stroreapp.presentation.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_favoriteItemsFragment"
+            app:destination="@id/favoriteItemsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_navigation_auth"
+            app:destination="@id/navigation_auth"
+            app:popUpTo="@id/mobile_navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteItemsFragment"
+        android:name="ge.semenchuk.store.app.stroreapp.presentation.ui.profile.favorite.FavoriteItemsFragment"
+        android:label="@string/favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteItemsFragment_to_detailsItemFragment"
+            app:destination="@id/detailsItemFragment" />
+    </fragment>
+
+</navigation>

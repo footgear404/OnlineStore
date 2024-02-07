@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.auth.AuthFragment">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/main_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/Theme.OnlineStore.Text.caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy_text"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dim_16"
+            android:paddingTop="100dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_input_layout"
+                style="@style/Theme.OnlineStore.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_input"
+                    style="@style/Theme.OnlineStore.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/s_name_input_layout"
+                style="@style/Theme.OnlineStore.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/s_name_input"
+                    style="@style/Theme.OnlineStore.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Theme.OnlineStore.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.vicmikhailau.maskededittext.MaskedEditText
+                    android:id="@+id/phone_input"
+                    style="@style/Theme.OnlineStore.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_number"
+                    android:inputType="number" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login"
+                style="@style/Theme.OnlineStore.Button"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="@dimen/dim_32"
+                android:enabled="false"
+                android:text="@string/login" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
